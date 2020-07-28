@@ -105,9 +105,34 @@ color: #E0B612;
     margin-top: 10px;
 }
 
-#generate-value {
+#generate-pin,
+#generate-number {
     text-align: center;
     letter-spacing: 15px;
     font-size: 30px;
     font-weight: bolder;
 }
+
+
+
+/* #box {
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    border: 8px solid #39458C;
+    background-color: #495BC3;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    display: none;
+    left: center;
+    top: center;
+}
+#box span {
+
+    position: absolute;
+    left: 40%;
+    top: 50%;
+} */
