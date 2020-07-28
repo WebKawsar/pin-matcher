@@ -104,3 +104,10 @@ color: #E0B612;
     color: #FF3C5F;
     margin-top: 10px;
 }
+
+#generate-value {
+    text-align: center;
+    letter-spacing: 15px;
+    font-size: 30px;
+    font-weight: bolder;
+}
