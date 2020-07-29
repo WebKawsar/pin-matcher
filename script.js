@@ -67,8 +67,6 @@ for(button of buttons){
                     generateShow = "";
                     return;
                 }
-
-                console.log(deleteOne);
             
             }
             
@@ -79,7 +77,6 @@ for(button of buttons){
             generateNumber.value = generateShow;
 
         }
-        
 
     });
 
@@ -101,9 +98,6 @@ document.getElementById("submit").addEventListener("click", function(){
                 document.getElementById("pass").style.display = "block";
                 document.getElementById("fail").style.display = "none";
 
-                // pin matched on block
-                // document.getElementById("box").style.display = "block";
-                
             }
             else {
 
