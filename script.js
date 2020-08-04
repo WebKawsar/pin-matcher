@@ -5,6 +5,7 @@
 generateInput = document.getElementById("generate-pin");
 document.getElementById("fail").style.display = "none";
 document.getElementById("pass").style.display = "none";
+document.getElementById("nill").style.display = "none";
 
 document.getElementById("generate-button").addEventListener("click", function(){
 
@@ -84,35 +85,31 @@ document.getElementById("submit").addEventListener("click", function(){
 
             generateInput = document.getElementById("generate-pin");
             generateNumber = document.getElementById("generate-number");
+            nillValue =  generateNumber.value;
 
             leftSideValue = parseInt(generateInput.value);
             rightSideValue = parseInt(generateNumber.value);
             
-            if(leftSideValue == rightSideValue){
+            if(nillValue == ""){
+
+                document.getElementById("pass").style.display = "none";
+                document.getElementById("fail").style.display = "none";
+                document.getElementById("nill").style.display = "block";
+
+            }
+            else if(leftSideValue == rightSideValue){
 
                 document.getElementById("pass").style.display = "block";
                 document.getElementById("fail").style.display = "none";
+                document.getElementById("nill").style.display = "none";
             }
             else {
                 
-                document.getElementById("fail").style.display = "block";
                 document.getElementById("pass").style.display = "none";
+                document.getElementById("fail").style.display = "block";
+                document.getElementById("nill").style.display = "none";
+                
             }
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
